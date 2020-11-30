@@ -6,5 +6,5 @@ class Site:
         self.dest = Path(dest)
 
     def createdir(self, path):
-        directory = self.dest + '/' + relative_to(self.source)
+        directory = self.dest + '/' + path.relative_to(self.source)
 
