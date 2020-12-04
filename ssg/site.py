@@ -20,6 +20,10 @@ class Site:
             if parser.valid_extension(extension):
                 return parser
 
+    def run_parser(self,path):
+        parser = load_parser(path.suffix)
+        
+
 
 
 
